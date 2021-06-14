@@ -2,3 +2,19 @@
   width: 90px;
   height: 90px;
 }
+.major_icon {
+  width: 170px;
+  height: 170px;
+}
+.major {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  display: inline-block;
+  margin-left: 50px;
+}
+.major_title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: "맑은 고딕";
+}
