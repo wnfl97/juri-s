@@ -4,11 +4,11 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-purple: #9f57b1;
+  --color-gray: #616161;
   --color-dark-puple: #864d7d;
-  --color-dark-gray: #616161;
+  --color-dark-gray: #444444;
   --color-light-gray: #7c7979;
-  --color-blue: #73aace;
+  --color-blue: #5a7383;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -50,6 +50,12 @@ ul {
   padding-left: 0;
 }
 
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -80,7 +86,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-purple);
+  background-color: var(--color-blue);
   align-items: center;
   color: var(--color-white);
   padding: 1rem;
@@ -103,5 +109,30 @@ p {
   border: 1px solid var(--color-white);
 }
 .navbar_menu_list:hover {
-  background-color: var(--color-dark-puple);
+  background-color: var(--color-light-gray);
+}
+/* Home */
+#home {
+  background: url("images/수정본.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-dark-white);
+}
+.home_title,
+.home_description {
+  color: var(--color-white);
+}
+.home_contect {
+  font-size: var(--font-regular);
+  color: var(--color-white);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
