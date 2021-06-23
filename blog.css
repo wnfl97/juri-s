@@ -4,8 +4,8 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-purple: #d27de7;
-  --color-dark-puple: #a04791;
+  --color-purple: #9f57b1;
+  --color-dark-puple: #864d7d;
   --color-dark-gray: #616161;
   --color-light-gray: #7c7979;
   --color-blue: #73aace;
@@ -27,12 +27,27 @@
   --weight-regular: 400;
 
   /* size */
+  --size-border-radius: 4px;
 
   /* Universal tags --공통적으로 적용해야할 것*/
   * {
     box-sizing: border-box;
     /*높이와 너비가 패딩을 포함해서 하도록*/
   }
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -59,4 +74,34 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-purple);
+  align-items: center;
+  color: var(--color-white);
+  padding: 1rem;
+}
+.navbar__menu {
+  display: flex;
+}
+.navbar__logo {
+  font-size: var(--font-middle);
+  font-weight: var(--weight-semi-bold);
+}
+.navbar_menu_list {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar_menu_list.active {
+  border: 1px solid var(--color-white);
+}
+.navbar_menu_list:hover {
+  background-color: var(--color-dark-puple);
 }
