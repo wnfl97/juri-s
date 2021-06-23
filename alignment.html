@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background: darksalmon;
+        }
+        .inner{
+            width: 50%;
+            height: 50%;
+            background-color: darkslateblue;
+        }
+        .inner1{
+            margin:auto;
+        }
+        .inner2{
+            text-align: center; /* 변화 X */
+            margin:auto;
+        }
+        .inner3{
+            transform: translate(50%, 50%);
+        }
+        .box4 h1{
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>margin: auto</h3>
+    <div class="box box1">
+        <div class="inner inner1"></div>
+    </div>
+    <h3>text-align: center</h3>
+    <div class="box box2">
+        <div class="inner inner2"></div>
+    </div>
+    <h3>translate(50%,50%)</h3>
+    <div class="box box3">
+        <div class="inner inner3"></div>
+    </div>
+    <h3>Text centering</h3>
+    <div class="box box4">
+        <h1>Text</h1>
+    </div>
+</body>
+</html>

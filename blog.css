@@ -1,3 +1,38 @@
+/* Global 프로그래밍하면서 변수 지정하듯이*/
+:root {
+  /* Color */
+--color-white:#ffffff;
+--color-light-white:#eeeeee;
+--color-dark-white:#bdbdbd;
+--color-purple: #d27de7;
+--color-dark-puple: #a04791;
+--color-dark-gray:#616161;
+--color-light-gray:#7c7979;
+--color-blue:#73aace;
+--color-yellow:#fff7d1;
+--color-orange:#feb546;
+--color-black:#000000
+
+  /* font-size */
+  --font-large: 3rem;
+  --font-middle: 1.750rem;
+  --font-regular: 1.125rem;
+  --font-small: 1rem;
+  --font-micro: 0.875rem;
+
+  /* font-weight */
+--weight-bold: 700;
+--weight-semi-bold: 600;
+--weight-regular: 400;
+
+  /* size */
+
+  /* Universal tags --공통적으로 적용해야할 것*/
+  *{
+    box-sizing: border-box; 
+    /*높이와 너비가 패딩을 포함해서 하도록*/
+  }
+}
 .logo {
   width: 90px;
   height: 90px;
